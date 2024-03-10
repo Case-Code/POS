@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-    <variable
-        name="branch"
-        type="com.casecode.domain.model.users.Branch" />
+
+        <variable
+            name="branch"
+            type="com.casecode.domain.model.users.Branch" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,14 +20,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/small_spacing"
-            tools:text="1"
-
             android:text="@{0 + String.valueOf(branch.branchCode)}"
-            android:textAppearance="@style/TextAppearance.pos.HeadlineMedium"
 
+            android:textAppearance="@style/TextAppearance.pos.HeadlineMedium"
             app:layout_constraintBottom_toBottomOf="parent"
+
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_branch_name"
@@ -34,22 +35,22 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/small_spacing"
             android:text="@{@string/branch_name + branch.branchName}"
-            tools:text="bracnh: 1"
             android:textAppearance="@style/TextAppearance.pos.BodyLarge"
             app:layout_constraintStart_toEndOf="@+id/tv_branch_code"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="bracnh: 1" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_branch_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="22342222222342"
             android:layout_marginTop="@dimen/smaller_spacing"
             android:layout_marginBottom="@dimen/small_spacing"
             android:text="@{String.valueOf(branch.phoneNumber)}"
             android:textAppearance="@style/TextAppearance.pos.BodyMedium"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_branch_name"
-            app:layout_constraintTop_toBottomOf="@+id/tv_branch_name" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_branch_name"
+            tools:text="22342222222342" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

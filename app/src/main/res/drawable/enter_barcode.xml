@@ -1,0 +1,84 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="147dp"
+    android:height="101dp"
+    android:viewportWidth="147"
+    android:viewportHeight="101">
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M117.217,18.332h11.334v64.336h-11.334z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M91.31,18.332h11.334v64.336h-11.334z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M44.356,18.332h11.334v64.336h-11.334z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M18.45,18.332h11.334v64.336h-11.334z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M107.502,18.332h4.857v64.336h-4.857z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M79.977,18.332h4.857v64.336h-4.857z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M60.547,18.332h4.857v64.336h-4.857z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M34.641,18.332h4.857v64.336h-4.857z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#CCD6E8"
+        android:fillType="nonZero"
+        android:pathData="M70.262,18.332h4.857v64.336h-4.857z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#184AA5"
+        android:fillType="nonZero"
+        android:pathData="M36.26,0.639L3.877,0.639C2.089,0.639 0.639,2.079 0.639,3.856L0.639,36.024C0.639,37.801 2.089,39.241 3.877,39.241C5.666,39.241 7.116,37.801 7.116,36.024L7.116,7.073L36.26,7.073C38.048,7.073 39.498,5.633 39.498,3.856C39.498,2.079 38.048,0.639 36.26,0.639Z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#184AA5"
+        android:fillType="nonZero"
+        android:pathData="M36.26,93.927L7.116,93.927L7.116,64.976C7.116,63.199 5.666,61.759 3.877,61.759C2.089,61.759 0.639,63.199 0.639,64.976L0.639,97.144C0.639,98.921 2.089,100.361 3.877,100.361L36.26,100.361C38.048,100.361 39.498,98.921 39.498,97.144C39.498,95.367 38.048,93.927 36.26,93.927Z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#184AA5"
+        android:fillType="nonZero"
+        android:pathData="M143.123,0.639L110.74,0.639C108.952,0.639 107.502,2.079 107.502,3.856C107.502,5.633 108.952,7.073 110.74,7.073L139.884,7.073L139.884,36.024C139.884,37.801 141.334,39.241 143.123,39.241C144.911,39.241 146.361,37.801 146.361,36.024L146.361,3.856C146.361,2.079 144.911,0.639 143.123,0.639Z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#184AA5"
+        android:fillType="nonZero"
+        android:pathData="M143.123,61.759C141.334,61.759 139.884,63.199 139.884,64.976L139.884,93.927L110.74,93.927C108.952,93.927 107.502,95.367 107.502,97.144C107.502,98.921 108.952,100.361 110.74,100.361L143.123,100.361C144.911,100.361 146.361,98.921 146.361,97.144L146.361,64.976C146.361,63.199 144.911,61.759 143.123,61.759Z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+</vector>

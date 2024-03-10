@@ -16,7 +16,7 @@
     <string name="menu_statistics">Statistics</string>
     <string name="menu_pos">Point of sale</string>
     <string name="menu_invoices">Invoices</string>
-    <string name="menu_products">Products</string>
+    <string name="menu_items">Items</string>
     <string name="menu_code_scanner">Code scanner</string>
     <string name="menu_users">Users</string>
     <string name="menu_settings">Settings</string>
@@ -24,7 +24,7 @@
     <string name="google_sign_in">Google Sign In</string>
     <string name="sales_services">Sales services</string>
     <string name="permissions_and_settings">Permissions and settings</string>
-    <string name="products_services">Products services</string>
+    <string name="items_services">Items services</string>
     <string name="profile_title">Profile</string>
     <string name="business_plans_title">Business plans</string>
     <string name="business_info_title">Business info</string>
@@ -133,12 +133,12 @@
 
     <string name="all_error_save">Something went wrong!</string>
 
-    // add product
+    // add item
     <string name="barcode">Barcode</string>
-    <string name="product_name">Product name</string>
+    <string name="name">name</string>
     <string name="price">Price</string>
     <string name="quantity">Quantity</string>
-    <string name="add_a_branches">Add a product</string>
+    <string name="add_a_item">Add a item</string>
     <string name="google_sign_in_failed">Google sign in failed %1$s</string>
     <string name="user_exists">User exists</string>
     <string name="user_does_not_exist">User does not exist</string>
@@ -166,5 +166,35 @@
     <string name="scan_result_empty">Scan result is empty.</string>
     <string name="login_employee_incorrect">Employee name or password are incorrect</string>
     <string name="login_employee_error">Error when Login Employee</string>
+    <string name="add_item">Add item</string>
+    <string name="items_title">Items</string>
+    <string name="update_item">Update item</string>
+    <string name="qty">Qty. %1$s</string>
+    <string name="egp">%1$s EGP</string>
+    <string name="delete_item_title">Delete item</string>
+    <string name="delete_item_message">Are you sure you want to delete this item?</string>
+    <string name="delete">Delete</string>
+    <string name="empty_list_message">empty list message</string>
+    <string name="empty_list_image_description">empty list image description</string>
+    <string name="name_is_required">Name is required</string>
+    <string name="price_is_required">Price is required</string>
+    <string name="quantity_is_required">Quantity is required</string>
+    <string name="barcode_is_required">Barcode is required</string>
+    <string name="no_camera_or_gallery_apps_found">No camera or gallery apps found</string>
+    <string name="select_image">Select Image</string>
+    <string name="scan_barcode">Scan barcode</string>
+    <string name="print_qr_code">Print QR code</string>
+    <string name="qr_code">QR code</string>
+    <string name="copies">Copies</string>
+
+
+    <!-- empty_items_view_layout -->
+    <string name="empty_items_icon">Empty Items Icon Description</string>
+    <string name="empty_items_title">No items to display</string>
+    <string name="empty_items_message">There are currently no items available.</string>
+    <string name="item_action_state_empty">Item action state is empty data!.</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search items</string>
+
 
 </resources>

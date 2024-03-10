@@ -2,6 +2,7 @@ package com.casecode.domain.utils
 
 // collection path
 const val USERS_COLLECTION_PATH = "users"
+const val ITEMS_COLLECTION_PATH = "items"
 const val CUSTOMERS_COLLECTION_PATH = "customers"
 const val BUSINESS_FIELD = "business"
 const val BRANCHES_COLLECTION_PATH = "branches"

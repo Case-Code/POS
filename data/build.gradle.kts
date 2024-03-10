@@ -16,7 +16,8 @@ android {
 dependencies {
    
    api(projects.domain)
-   testApi(projects.domain)
+    implementation(libs.firebase.storage.ktx)
+    testApi(projects.domain)
    testApi(projects.testing)
    
    //Coroutines

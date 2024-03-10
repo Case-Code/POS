@@ -6,24 +6,22 @@ import com.casecode.domain.repository.SignRepository
 import com.casecode.domain.utils.Resource
 import javax.inject.Inject
 
-class SignInUseCase @Inject constructor(private val signInRepository: SignRepository)
-{
-   fun currentUser() = signInRepository.currentUser
-   
-   suspend fun signIn(): Resource<IntentSender> = signInRepository.signIn()
+class SignInUseCase @Inject constructor(private val signInRepository: SignRepository) {
+    fun currentUser() = signInRepository.currentUser
 
-   fun signInWithIntent(intent: Intent) =
-      signInRepository.signInWithIntent(intent)
+    suspend fun signIn(): Resource<IntentSender> = signInRepository.signIn()
 
-   suspend fun isRegistrationAndBusinessCompleted(): Resource<Boolean> =
-      signInRepository.isRegistrationAndBusinessCompleted()
-   
-  suspend fun employeeLogin(uid: String, employeeId: String, password: String) =
-      signInRepository.employeeLogin(uid, employeeId, password)
-   
+    fun signInWithIntent(intent: Intent) =
+        signInRepository.signInWithIntent(intent)
+
+    suspend fun isRegistrationAndBusinessCompleted(): Resource<Boolean> =
+        signInRepository.isRegistrationAndBusinessCompleted()
+
+    suspend fun employeeLogin(uid: String, employeeId: String, password: String) =
+        signInRepository.employeeLogin(uid, employeeId, password)
+
 }
 
-class SignOutUseCase @Inject constructor(private val signInRepository: SignRepository)
-{
-   suspend operator fun invoke() = signInRepository.signOut()
+class SignOutUseCase @Inject constructor(private val signInRepository: SignRepository) {
+    suspend operator fun invoke() = signInRepository.signOut()
 }

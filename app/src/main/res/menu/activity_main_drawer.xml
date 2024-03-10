@@ -31,14 +31,14 @@
     </item>
 
     <!-- Products services -->
-    <item android:title="@string/products_services">
+    <item android:title="@string/items_services">
         <menu>
             <item
-                android:id="@+id/nav_products"
+                android:id="@+id/nav_items"
                 android:checkable="true"
 
                 android:icon="@drawable/baseline_view_module_24"
-                android:title="@string/menu_products" />
+                android:title="@string/menu_items" />
             <item
                 android:id="@+id/nav_code_scanner"
                 android:checkable="true"

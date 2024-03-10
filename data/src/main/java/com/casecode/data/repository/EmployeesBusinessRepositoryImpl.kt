@@ -19,50 +19,42 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 class EmployeesBusinessRepositoryImpl @Inject constructor(
-     private val firestore: FirebaseFirestore,
-     @Dispatcher(IO) private val ioDispatcher: CoroutineDispatcher,
-                                                         )
-   : EmployeesBusinessRepository
-{
-   override suspend fun getEmployees(uid: String): List<Employee>
-   {
-      TODO("Not yet implemented")
-   }
-   
-   override suspend fun setEmployees(employees: MutableList<Employee>, uid: String):
-        AddEmployees
-   {
-   return withContext(ioDispatcher) {
-      try
-      {
-         val resultAddEmployee = suspendCoroutine<AddEmployees> { continuation ->
-               Timber.e("uid = $uid")
-            val employeesRequest = employees.toEmployeesRequest()
-            Timber.e("employeesRequest = $employeesRequest")
-            
-            firestore.collection(USERS_COLLECTION_PATH).document(uid)
-               .update(employeesRequest as Map<String, Any>)
-               .addOnSuccessListener {
-                  Timber.d("employees is added successfully")
-                  continuation.resume(Resource.Success(true))
-               }.addOnFailureListener {
-                  continuation.resume(Resource.error(R.string.add_employees_business_failure))
-                  
-                  Timber.e("employees Failure: $it")
-               }
-            
-         }
-         resultAddEmployee
-      }
-      catch (e: UnknownHostException)
-      {
-         Resource.error(R.string.add_employees_business_network)
-         
-      } catch (e: Exception){
-         Timber.e("Exception while adding employees: $e")
-         Resource.error(R.string.add_employees_business_failure)
-      }
-   }
-   
-   }
+    private val firestore: FirebaseFirestore,
+    @Dispatcher(IO) private val ioDispatcher: CoroutineDispatcher,
+) : EmployeesBusinessRepository {
+    override suspend fun getEmployees(uid: String): List<Employee> {
+        TODO("Not yet implemented")
+    }
+
+    override suspend fun setEmployees(employees: MutableList<Employee>, uid: String): AddEmployees {
+        return withContext(ioDispatcher) {
+            try {
+                val resultAddEmployee = suspendCoroutine<AddEmployees> { continuation ->
+                    Timber.e("uid = $uid")
+                    val employeesRequest = employees.toEmployeesRequest()
+                    Timber.e("employeesRequest = $employeesRequest")
+
+                    firestore.collection(USERS_COLLECTION_PATH).document(uid)
+                        .update(employeesRequest as Map<String, Any>)
+                        .addOnSuccessListener {
+                            Timber.d("employees is added successfully")
+                            continuation.resume(Resource.Success(true))
+                        }.addOnFailureListener {
+                            continuation.resume(Resource.error(R.string.add_employees_business_failure))
+
+                            Timber.e("employees Failure: $it")
+                        }
+
+                }
+                resultAddEmployee
+            } catch (e: UnknownHostException) {
+                Resource.error(R.string.add_employees_business_network)
+
+            } catch (e: Exception) {
+                Timber.e("Exception while adding employees: $e")
+                Resource.error(R.string.add_employees_business_failure)
+            }
+        }
+
+    }
 }

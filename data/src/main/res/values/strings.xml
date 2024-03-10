@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    // Sign in
+    <!-- sign in -->
     <string name="sign_in_failure">Sign in field.</string>
     <string name="unsupported_api_call">Sign in unsupported, please check google play service.</string>
     <string name="sign_in_cancel">One-tap dialog was closed..</string>
     <string name="sign_in_network_error">One-tap encountered a network error..</string>
     <string name="sign_in_api_exception">Couldn\'t get credential from result.</string>
     <string name="sign_in_exception">Something error in one-tap.</string>
-    // Business
+
+    <!-- business -->
     <string name="add_business_failure">Add  Business failure,</string>
     <string name="add_business_network">Failure when add business, Check internet connection</string>
 
@@ -18,4 +18,50 @@
 
     <string name="add_employees_business_failure">Add employees Business failure,</string>
     <string name="add_employees_business_network">Failure when add Employees, Check internet connection</string>
+
+    <string name="add_product_network">Failure when add product, Check internet connection</string>
+
+    <string name="update_product_network">Failure when update product, Check internet connection</string>
+    <string name="update_product_failure">Update product failure,</string>
+
+    <string name="delete_product_network">Failure when delete product, Check internet connection</string>
+
+    <!-- ======================================================================================= -->
+    <!-- items -->
+    <!-- ======================================================================================= -->
+    <string name="error_fetching_items">Error fetching items. Please try again later.</string>
+
+    <string name="item_deleted_successfully">Item deleted successfully</string>
+    <string name="item_deleted_failure">Item deleted failure</string>
+    <string name="delete_item_failure_network">Unable to delete item. Please check your internet connection.</string>
+    <string name="delete_item_failure_generic">Failed to delete item. Please try again later.</string>
+
+    <string name="item_updated_successfully">Item updated successfully</string>
+    <string name="update_item_failure_network">Unable to update item. Please check your internet
+        connection.</string>
+    <string name="update_item_failure_generic">Failed to update item. Please try again later.</string>
+
+    <string name="item_added_successfully">Item added successfully</string>
+    <string name="add_item_failure_network">Unable to add item. Please check your internet
+        connection.</string>
+    <string name="add_item_failure_generic">Failed to add item. Please try again later.</string>
+
+    <string name="upload_image_failure_network">Upload image failed due to network issues. Please check your internet connection and try again.</string>
+    <string name="upload_image_failure_generic">Upload image failed. Please try again later.</string>
+
+    <string name="replace_image_failure_network">Replace image failed due to network issues.
+        Please check your internet connection and try again.</string>
+    <string name="replace_image_failure_generic">Replace image failed. Please try again later
+        .</string>
+
+    <string name="download_url_failure_network">Failed to retrieve download URL due to network issues. Please check your internet connection and try again.</string>
+    <string name="download_url_failure_generic">Failed to retrieve download URL. Please try again later.</string>
+
+    <string name="image_deleted_successfully">Image deleted successfully</string>
+    <string name="delete_image_failure_network">Delete image failed due to network issues.
+        Please check your internet connection and try again.</string>
+    <string name="delete_image_failure_generic">Delete image failed. Please try again later
+        .</string>
+    <!-- ======================================================================================= -->
+
 </resources>

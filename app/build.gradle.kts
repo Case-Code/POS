@@ -7,6 +7,7 @@ plugins {
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.pos.android.hilt)
     alias(libs.plugins.pos.android.firebase)
+    alias(libs.plugins.navigation.safeargs.kotlin)
 }
 
 android {
@@ -137,6 +138,7 @@ dependencies {
     implementation(libs.navigation.ui)
     // service
     implementation(libs.budiyev.barcode)
+    implementation(libs.zxing.android.embedded)
 
     // coroutines
     implementation(libs.kotlinx.coroutines.android)

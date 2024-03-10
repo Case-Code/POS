@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- sign in -->
+    <string name="sign_in_failure">فشل تسجيل الدخول.</string>
+    <string name="unsupported_api_call">تسجيل الدخول غير مدعوم، يرجى التحقق من خدمة Google Play.</string>
+    <string name="sign_in_cancel">تم إغلاق مربع الحوار بنقرة واحدة.</string>
+    <string name="sign_in_network_error">حدث خطأ في الشبكة أثناء النقر الواحد.</string>
+    <string name="sign_in_api_exception">تعذر الحصول على بيانات الاعتماد من النتيجة.</string>
+    <string name="sign_in_exception">حدث خطأ ما في عملية النقر الواحد.</string>
+
+    <!-- business -->
+    <string name="add_business_failure">فشل إضافة العمل.</string>
+    <string name="add_business_network">فشل إضافة العمل، يرجى التحقق من اتصال الإنترنت.</string>
+
+    <string name="add_subscription_business_failure">فشل إضافة عمل مشترك.</string>
+    <string name="add_subscription_business_network">فشل إضافة عمل مشترك، يرجى التحقق من اتصال الإنترنت.</string>
+    <string name="complete_business_failure">فشل إكمال عمل مشترك.</string>
+
+    <string name="add_employees_business_failure">فشل إضافة موظفين للعمل.</string>
+    <string name="add_employees_business_network">فشل إضافة موظفين، يرجى التحقق من اتصال الإنترنت.</string>
+
+    <string name="add_product_network">فشل إضافة المنتج، يرجى التحقق من اتصال الإنترنت.</string>
+
+    <string name="update_product_network">فشل تحديث المنتج، يرجى التحقق من اتصال الإنترنت.</string>
+    <string name="update_product_failure">فشل تحديث المنتج.</string>
+
+    <string name="delete_product_network">فشل حذف المنتج، يرجى التحقق من اتصال الإنترنت.</string>
+
+    <!-- items -->
+    <string name="error_fetching_items">حدث خطأ في استرجاع العناصر. يرجى المحاولة مرة أخرى لاحقًا.</string>
+
+    <string name="item_deleted_successfully">تم حذف العنصر بنجاح</string>
+    <string name="item_deleted_failure">فشل حذف العنصر</string>
+    <string name="delete_item_failure_network">تعذر حذف العنصر. يرجى التحقق من اتصال الإنترنت الخاص بك.</string>
+    <string name="delete_item_failure_generic">فشل حذف العنصر. يرجى المحاولة مرة أخرى لاحقًا.</string>
+
+    <string name="item_updated_successfully">تم تحديث العنصر بنجاح</string>
+    <string name="update_item_failure_network">تعذر تحديث العنصر. يرجى التحقق من اتصال الإنترنت الخاص بك.</string>
+    <string name="update_item_failure_generic">فشل تحديث العنصر. يرجى المحاولة مرة أخرى لاحقًا.</string>
+
+    <string name="item_added_successfully">تمت إضافة العنصر بنجاح</string>
+    <string name="add_item_failure_network">تعذر إضافة العنصر. يرجى التحقق من اتصال الإنترنت الخاص بك.</string>
+    <string name="add_item_failure_generic">فشل إضافة العنصر. يرجى المحاولة مرة أخرى لاحقًا.</string>
+
+    <string name="upload_image_failure_network">فشل تحميل الصورة بسبب مشكلات في الشبكة. يرجى التحقق من اتصال الإنترنت الخاص بك والمحاولة مرة أخرى.</string>
+    <string name="upload_image_failure_generic">فشل تحميل الصورة. يرجى المحاولة مرة أخرى لاحقًا.</string>
+
+    <string name="replace_image_failure_network">فشل استبدال الصورة بسبب مشكلات في الشبكة. يرجى التحقق من اتصال الإنترنت الخاص بك والمحاولة مرة أخرى.</string>
+    <string name="replace_image_failure_generic">فشل استبدال الصورة. يرجى المحاولة مرة أخرى لاحقًا.</string>
+
+    <string name="download_url_failure_network">فشل استرداد عنوان URL التنزيل بسبب مشكلات في الشبكة. يرجى التحقق من اتصال الإنترنت الخاص بك والمحاولة مرة أخرى.</string>
+    <string name="download_url_failure_generic">فشل استرداد عنوان URL التنزيل. يرجى المحاولة مرة أخرى لاحقًا.</string>
+
+    <string name="image_deleted_successfully">تم حذف الصورة بنجاح</string>
+    <string name="delete_image_failure_network">فشل حذف الصورة بسبب مشكلات في الشبكة. يرجى التحقق من اتصال الإنترنت الخاص بك والمحاولة مرة أخرى.</string>
+    <string name="delete_image_failure_generic">فشل حذف الصورة. يرجى المحاولة مرة أخرى لاحقًا.</string>
+</resources>

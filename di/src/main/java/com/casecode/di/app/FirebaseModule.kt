@@ -6,6 +6,7 @@ import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.identity.Identity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.storage.FirebaseStorage
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -24,9 +25,13 @@ object FirebaseModule {
     fun provideFirebaseFirestore(): FirebaseFirestore = FirebaseFirestore.getInstance()
 
     @Provides
+    fun provideFirebaseStorage(): FirebaseStorage = FirebaseStorage.getInstance()
+
+    @Provides
     @Singleton
-    fun provideSignInClient(@ApplicationContext context: Context) =
-        Identity.getSignInClient(context)
+    fun provideSignInClient(
+        @ApplicationContext context: Context,
+    ) = Identity.getSignInClient(context)
 
     @Provides
     fun provideSignInRequest(): BeginSignInRequest {

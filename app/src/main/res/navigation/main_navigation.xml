@@ -22,34 +22,54 @@
         android:name="com.casecode.pos.ui.invoices.InvoicesFragment"
         android:label="@string/menu_invoices"
         tools:layout="@layout/fragment_invoices" />
-    <fragment
-        android:id="@+id/nav_products"
-        android:name="com.casecode.pos.ui.product.ProductsFragment"
-        android:label="ProductFragment" />
+
     <fragment
         android:id="@+id/nav_code_scanner"
         android:name="com.casecode.pos.ui.codescanner.CodeScannerFragment"
-        android:label="CodeScannerFragment" />
+        android:label="CodeScannerFragment"
+        tools:layout="@layout/fragment_code_scanner" />
+
     <fragment
         android:id="@+id/nav_setting"
         android:name="com.casecode.pos.ui.settings.SettingsFragment"
-        android:label="SettingFragment" />
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_settings" />
+
     <fragment
         android:id="@+id/nav_users"
         android:name="com.casecode.pos.ui.employee.EmployeesFragment"
-        android:label="UsersFragment" />
+        android:label="UsersFragment"
+        tools:layout="@layout/fragment_employees" />
 
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.casecode.pos.ui.profile.ProfileFragment"
-        tools:layout="@layout/fragment_profile"
-        android:label="@string/profile_title" />
-    <dialog
+        android:label="@string/profile_title"
+        tools:layout="@layout/fragment_profile" />
 
+    <dialog
         android:id="@+id/nav_sign_out"
         android:name="com.casecode.pos.ui.signout.SignOutDialog"
-        tools:layout="@layout/dialog_sign_out"
+        tools:layout="@layout/dialog_sign_out" />
 
+    <fragment
+        android:id="@+id/nav_items"
+        android:name="com.casecode.pos.ui.item.ItemsFragment"
+        android:label="@string/items_title"
+        tools:layout="@layout/fragment_items">
+        <action
+            android:id="@+id/action_itemsFragment_to_QRCodeDialogFragment"
+            app:destination="@id/nav_qr_code" />
+    </fragment>
 
-        />
+    <dialog
+        android:id="@+id/nav_qr_code"
+        android:name="com.casecode.pos.ui.item.QRCodeDialogFragment"
+        android:label="QRCodeDialogFragment"
+        tools:layout="@layout/dialog_qr_code">
+
+        <argument
+            android:name="item"
+            app:argType="com.casecode.domain.model.users.Item" />
+    </dialog>
 </navigation>
